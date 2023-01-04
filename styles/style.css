@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
+/* font-family: 'Oswald', sans-serif; */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+.side {
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.side .title {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5vw;
+    margin: 0px 15vw;
+    width: 70vw;
+}
+
+.side .fancy {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 0.8em;
+}
+
+#left-side {
+    background-color: #0C0D0F;
+    z-index: 2;
+}
+
+#left-side .fancy {
+    color: #17E962;
+}
+
+#right-side .fancy {
+    color: white;
+}
+
+#right-side {
+    background-color: #17E962;
+    color: #141414;
+}
+
+#right-side .title {
+    color: rgb(20, 20, 20);
+}
+
+
+body[data-nav="true"]>main>#right-side {
+    background-color: #8E2034;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+body[data-nav="true"]>main>#left-side .fancy {
+    color: #8E2034;
+    -webkit-transition: color 1000ms linear;
+    -ms-transition: color 1000ms linear;
+    transition: color 1000ms linear;
+}
+
+/* @keyframes titleAnimation {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+} */
+
+/* h2 {
+    animation: titleAnimation ease-out 2s;
+    animation-fill-mode: forwards;
+} */

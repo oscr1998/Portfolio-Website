@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/6feac3e73c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'> -->
+    <script defer src="./javascript/landingPage.js"></script>
+    <script defer src="./javascript/navbar.js"></script>
+</head>
+
+<body data-nav="false">
+    <main>
+        <div id="left-side" class="side">
+            <h2 class="title" id="title1">
+                Oliver Catelan-Robinson:
+                <span class="fancy">Developer</span>
+            </h2>
+        </div>
+        <div id="right-side" class="side">
+            <h2 class="title" id="title2">
+                Oliver Catelan-Robinson:
+                <span class="fancy">Engineer</span>
+            </h2>
+        </div>
+    </main>
+
+    <button id="nav-toggle" type="button" onclick="toggleNav()">
+        <i class="open uil uil-bars"></i>
+        <i class="close uil uil-multiply"></i>
+    </button>
+
+    <nav>
+        <div id="nav-links" class="grid">
+            <div class="grid-item" id="grid1" onclick="toggleAbout()">
+                <div class="grid-border"></div>
+                <div class="grid-content">
+                    <div class="grid-image">
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
+                    <a class="nav-link" href="page1">
+                        <h2 class="nav-link-label rubik-font">About</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="grid-item" id="grid2" onclick="toggleProject()">
+                <div class="grid-border"></div>
+                <div class="grid-content">
+                    <div class="grid-image">
+                        <i class="fa-solid fa-sheet-plastic"></i>
+                    </div>
+                    <a class="nav-link" href="#">
+                        <h2 class="nav-link-label rubik-font">Projects</h2>
+                    </a>
+                </div>
+
+            </div>
+            <div class="grid-item" id="grid3" onclick="toggleContact()">
+                <div class="grid-border"></div>
+                <div class="grid-content">
+                    <div class="grid-image">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <a class="nav-link" href="#">
+                        <h2 class="nav-link-label rubik-font">Contact</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="aboutPage" class="page" data-about="false">
+        <button onclick="toggleAbout()">
+            <i class="open uil uil-bars"></i>
+            <i class="close uil uil-multiply"></i>
+        </button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
+            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
+            consequatur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
+            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
+            consequatur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
+            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
+            consequatur?</p>
+    </div>
+
+    <div id="projectPage" class="page" data-project="false">
+        <button onclick="toggleProject()">
+            <i class="open uil uil-bars"></i>
+            <i class="close uil uil-multiply"></i>
+        </button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
+            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
+            consequatur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
+            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
+            consequatur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
+            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
+            consequatur?</p>
+    </div>
+
+    <div id="contactPage" class="page" data-contact="false">
+        <button onclick="toggleContact()">
+            <i class="open uil uil-bars"></i>
+            <i class="close uil uil-multiply"></i>
+        </button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
+            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
+            consequatur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
+            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
+            consequatur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
+            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
+            consequatur?</p>
+    </div>
+
+</body>
+
+</html>
