@@ -61,6 +61,11 @@ body[data-nav="true"]>nav>#nav-links {
     text-transform: uppercase;
 }
 
+.contact-box>.nav-link>.nav-link-label {
+    color: white;
+    text-decoration: none;
+}
+
 #nav-links>div:hover>div>.nav-link>.nav-link-label{
     opacity: 0.95;
     transition: ease 0.7s;
@@ -169,11 +174,23 @@ nav>#grid {
     justify-content: center;
     z-index: 6;
     height: 100%;
-    min-height: 300px;
+    min-height: 100px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
+}
+
+#grid3{
+    display: grid;
+
+}
+
+.contact-box{
+    height: 33%;
+    border-radius: 0;
+    display: flex
+
 }
 
 .grid-item:hover {
@@ -216,7 +233,7 @@ nav>#grid {
     z-index: 1;
 } */
 
-/* .grid-item>.grid-content {
+.grid-item>.grid-content {
     background-color: rgb(23, 23, 23);
     border-radius: inherit;
     display: flex;
@@ -226,7 +243,14 @@ nav>#grid {
     padding: 10px;
     position: absolute;
     z-index: 2;
-} */
+}
+
+.grid-contact-content{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
 
 .grid-image {
     position: relative;
@@ -248,6 +272,34 @@ nav>#grid {
     opacity: 1;
     transition: ease-in 0.5s;
 }
+
+.contact-image{    
+    position: fixed;
+    right: 23%;
+    align-items: flex-start;
+}
+
+.contact-image>i {
+    font-size: 2em;
+    opacity: 0.25;
+    color: #8E2034;
+}
+
+.grid-item:hover>.contact-image>i{
+    opacity: 1;
+    transition: ease-in 0.5s;
+}
+
+#linkedIn{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#email{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 
 /* ########## PAGES ########## */
 
@@ -308,3 +360,16 @@ body[data-contact="false"]>#contactPage{
     right:-100%;
     transition: right 0.5s;
     z-index: 101;}
+
+
+/* Link decorations */
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }

@@ -69,16 +69,32 @@
                 </div>
 
             </div>
-            <div class="grid-item" id="grid3" onclick="toggleContact()">
-                <div class="grid-border"></div>
+            <div id="grid3">
                 <div class="grid-content">
-                    <div class="grid-image">
+                    <div class="contact-box grid-item" id="linkedIn" onclick="window.open('https://www.linkedin.com/in/oliver-catelan-robinson-624787154/');">
+                        <div class="contact-image">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <a class="nav-link" href="#">
+                            <h2 class="nav-link-label rubik-font">LinkedIn</h2>
+                        </a>
+                    </div>
+                    <div class="contact-box grid-item" id="github" onclick="window.open('https://github.com/oscr1998');">
+                        <div class="contact-image">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                        <a class="nav-link" href="#">
+                            <h2 class="nav-link-label rubik-font">GitHub  </h2>
+                        </a>
+                    </div>
+                    <div class="contact-box grid-item" id="email" onclick="sendEmail();">
+                        <div class="contact-image">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
-                    <a class="nav-link" href="#">
-                        <h2 class="nav-link-label rubik-font">Contact</h2>
-                        <h4 class="nav-details">LinkedIn | GitHub | Email</h4>
-                    </a>
+                        <a class="nav-link" href="#">
+                            <h2 class="nav-link-label rubik-font">Email</h2>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,83 +128,86 @@
             <div class="experience-section">
                 <i class="fa-solid fa-campground"></i>
                 <h2 class="about-header">Futureproof Bootcamp</h2>
-                <p id="info-tag">An intensive 13-week course, learnt full-stack web development and technology, covering:</p>
+                <p id="info-tag">An intensive 13-week course, learnt full-stack web development and technology,
+                    covering:</p>
                 <div class="tech-list">
-                <ul id="tech-list-info">
-                    <li class="info">Web, HTML, CSS and dev skills</li>
-                    <li>Programming principles and JavaScript</li>
-                    <li>Databases, cyber security and architecture</li>
-                    <li>React, Test Driven Development, and environment management</li>
-                    <li>Backend/Frontend Python and principles of data science</li>
-                </ul>
-            </div>
+                    <ul id="tech-list-info">
+                        <li class="info">Web, HTML, CSS and dev skills</li>
+                        <li>Programming principles and JavaScript</li>
+                        <li>Databases, cyber security and architecture</li>
+                        <li>React, Test Driven Development, and environment management</li>
+                        <li>Backend/Frontend Python and principles of data science</li>
+                    </ul>
+                </div>
             </div>
             <div class="experience-section">
                 <i class="fa-solid fa-gears"></i>
                 <h2 class="about-header">Design Engineer, BUUK Infrastructure</h2>
                 <div class="job-desc">
-                <ul class="job-list">
-                    <li> Design & Consultancy engineer for district heating infrastructure with practical experience in
-                        design engineering, asset management & maintenance engineering.
-                    </li>
-                    <li>Designed and modelled new district heating energy centres: modelling peak performance, annual
-                        energy consumption and optimising energy centre plant.</li>
-                        <li>Collaborated with Software Engineers and used Python to develop backend and frontend code for a data visualisation tool.
+                    <ul class="job-list">
+                        <li> Design & Consultancy engineer for district heating infrastructure with practical experience
+                            in
+                            design engineering, asset management & maintenance engineering.
                         </li>
-                </ul>
-            </div>
+                        <li>Designed and modelled new district heating energy centres: modelling peak performance,
+                            annual
+                            energy consumption and optimising energy centre plant.</li>
+                        <li>Collaborated with Software Engineers and used Python to develop backend and frontend code
+                            for a data visualisation tool.
+                        </li>
+                    </ul>
+                </div>
             </div>
 
         </div>
         <div class="divider"></div>
-        <div class="skills-row row">
+        <div class="skills-row row" id="skills-row">
             <h1 class="about-title">Skills</h1>
-            <div class="about-section">
-                <h2 class="about-header">Frontend</h2>
-                <ul>
-                    <li>
-                        <i class="fa-brands fa-html5"></i>HTML</li>
-                    <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
-                    <li><i class="fa-brands fa-js"></i>JavaScript</li>
-                    <li><i class="fa-brands fa-react"></i>React.js</li>
-                    <li>Redux</li>
-                    <li><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
-                    <li><i class="fa-brands fa-sass"></i>Sass</li>
-                    <li>Cypress</li>
-                </ul>
+            <div class="about-section about-skills-section">
+                <h2 class="about-header about-header-skills">Frontend</h2>
+                <div class="frontend-list">
+                    <div class="frontend-item">HTML</div>
+                    <div class="frontend-item">CSS</div>
+                    <div class="frontend-item">JavaScript</div>
+                    <div class="frontend-item">React.js</div>
+                    <div class="frontend-item">Redux</div>
+                    <div class="frontend-item">Bootstrap</div>
+                    <div class="frontend-item">Sass</div>
+                    <div class="frontend-item">Cypress</div>
+                </div>
             </div>
-            <div class="about-section">
-                <h2 class="about-header">Backend</h2>
-                <ul>
-                    <li><i class="fa-brands fa-python"></i>Python</li>
-                    <li>Django</li>
-                    <li>Express</li>
-                    <li>Flask</li>
-                    <li><i class="fa-brands fa-node-js"></i>Node.js</li>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
-                    <li>ElephantSQL</li>
-                    <li>Postman/Insomnia</li>
-                </ul>
+            <div class="about-section about-skills-section">
+                <h2 class="about-header about-header-skills">Backend</h2>
+                <div class="backend-list">
+                    <div class="backend-item">Python</div>
+                    <div class="backend-item">Django</div>
+                    <div class="backend-item">Express</div>
+                    <div class="backend-item">Flask</div>
+                    <div class="backend-item">Node.js</div>
+                    <div class="backend-item">MySQL</div>
+                    <div class="backend-item">MongoDB</div>
+                    <div class="backend-item">ElephantSQL</div>
+                    <div class="backend-item">Postman</div>
+                </div>
             </div>
-            <div class="about-section">
-                <h2 class="about-header">Fullstack</h2>
-                <ul>
-                    <li>Git</li>
-                    <li>Gitbash</li>
-                    <li>Docker</li>
-                    <li>Linux</li>
-                    <li>Jest</li>
-                </ul>
+            <div class="about-section about-skills-section">
+                <h2 class="about-header about-header-skills">Fullstack</h2>
+                <div class="fullstack-list">
+                    <div class="fullstack-item">Git</div>
+                    <div class="fullstack-item">Gitbash</div>
+                    <div class="fullstack-item">Docker</div>
+                    <div class="fullstack-item">Linux</div>
+                    <div class="fullstack-item">Jest</div>
+                </div>
             </div>
-            <div class="about-section">
-                <h2 class="about-header">Other</h2>
-                <ul>
-                    <li>Kanban & Agile</li>
-                    <li>Leadership</li>
-                    <li>Collaborative thinking</li>
-                    <li>Pair programming</li>
-                </ul>
+            <div class="about-section about-skills-section">
+                <h2 class="about-header about-header-skills">Other</h2>
+                <div class="other-list">
+                    <div class="other-item">Kanban</div>
+                    <div class="other-item">Agile</div>
+                    <div class="other-item">Teamwork</div>
+                    <div class="other-item">Leadership</div>
+                </div>
             </div>
         </div>
         <div class="divider"></div>

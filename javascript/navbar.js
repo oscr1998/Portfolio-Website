@@ -28,3 +28,8 @@ const toggleContact = () => {
     document.body.dataset.contact =
         document.body.dataset.contact === "true" ? "false" : "true";
 };
+
+function sendEmail() 
+{
+    window.location.assign("mailto:oscr1998@outlook.com");
+}
