@@ -6,11 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oliver-CR</title>
+
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
 
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/projects.css">
 
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -18,6 +21,7 @@
         type='text/css'> -->
     <script defer src="./javascript/landingPage.js"></script>
     <script defer src="./javascript/navbar.js"></script>
+    <script defer src="./javascript/projects.js"></script>
     <script defer src="./javascript/bubble.js"></script>
 </head>
 
@@ -71,7 +75,8 @@
             </div>
             <div id="grid3">
                 <div class="grid-content">
-                    <div class="contact-box grid-item" id="linkedIn" onclick="window.open('https://www.linkedin.com/in/oliver-catelan-robinson-624787154/');">
+                    <div class="contact-box grid-item" id="linkedIn"
+                        onclick="window.open('https://www.linkedin.com/in/oliver-catelan-robinson-624787154/');">
                         <div class="contact-image">
                             <i class="fa-brands fa-linkedin"></i>
                         </div>
@@ -79,18 +84,19 @@
                             <h2 class="nav-link-label rubik-font">LinkedIn</h2>
                         </a>
                     </div>
-                    <div class="contact-box grid-item" id="github" onclick="window.open('https://github.com/oscr1998');">
+                    <div class="contact-box grid-item" id="github"
+                        onclick="window.open('https://github.com/oscr1998');">
                         <div class="contact-image">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
                         <a class="nav-link" href="#">
-                            <h2 class="nav-link-label rubik-font">GitHub  </h2>
+                            <h2 class="nav-link-label rubik-font">GitHub </h2>
                         </a>
                     </div>
                     <div class="contact-box grid-item" id="email" onclick="sendEmail();">
                         <div class="contact-image">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
                         <a class="nav-link" href="#">
                             <h2 class="nav-link-label rubik-font">Email</h2>
                         </a>
@@ -221,34 +227,60 @@
     </div>
 
     <div id="projectPage" class="page" data-project="false">
-        <button onclick="toggleProject()">
-            <i class="close uil uil-multiply"></i>
-        </button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
-            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
-            consequatur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
-            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
-            consequatur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
-            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
-            consequatur?</p>
-    </div>
+        <div class="project-grid">
+            <div class="title-project" id="title-project">
+                <h1 class="title-proj">My Projects</h1>
+            </div>
+            <div class="project-item" id="project1">
+                <div class="background-image" id="background1"></div>
+                <div class="project_heading">
+                    <h2>Superman</h2>
+                    <span class="small">Hover</span>
+                </div>
+            </div>
+            <div class="project-item" id="project2">
+                <div class="background-image" id="background2"></div>
+                <div class="project_heading">
+                    <h2>Superman</h2>
+                    <span class="small">Hover</span>
+                </div>
+            </div>
+            <div class="project-item" id="project3">
+                <div class="background-image" id="background3"></div>
+                <div class="project_heading">
+                    <h2>Superman</h2>
+                    <span class="small">Hover</span>
+                </div>
+            </div>
+            <div class="project-item" id="project4">
+                <div class="background-image" id="background4"></div>
+                <div class="project_heading">
+                    <h2>Superman</h2>
+                    <span class="small">Hover</span>
+                </div>
+            </div>
+            <div class="project-item" id="project5">
+                <div class="background-image" id="background5"></div>
+                <div class="project_heading">
+                    <h2>Superman</h2>
+                    <span class="small">Hover</span>
+                </div>
+            </div>
+            <div class="project-item" id="project6">
+                <div class="background-image" id="background6"></div>
+                <div class="project_heading">
+                    <h2>Superman</h2>
+                    <span class="small">Hover</span>
+                </div>
+            </div>
 
-    <div id="contactPage" class="page" data-contact="false">
-        <button onclick="toggleContact()">
-            <i class="open uil uil-bars"></i>
-            <i class="close uil uil-multiply"></i>
-        </button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
-            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
-            consequatur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
-            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
-            consequatur?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda earum porro reiciendis eius minima
-            ipsa suscipit velit nesciunt necessitatibus commodi ab veniam ad praesentium, obcaecati, aperiam eos quod
-            consequatur?</p>
+            <div class="project-button" id="projectButton">
+                <button onclick="toggleProject()" class="projectToggle">
+                    <i class="close uil uil-multiply"></i>
+                </button>
+            </div>
+        </div>
+
     </div>
 
 </body>
