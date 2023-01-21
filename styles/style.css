@@ -8,7 +8,7 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
+
 }
 
 .side {
@@ -38,6 +38,12 @@ body {
     font-weight: bold;
     font-size: 1.3em;
     line-height: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* transform: translateX(20%);
+    transition: 5s; */
 }
 
 #left-side {
@@ -70,12 +76,55 @@ body[data-nav="true"]>main>#right-side {
     transition: background-color 1000ms linear;
 }
 
-body[data-nav="true"]>main>#left-side .fancy {
-    color: #8E2034;
-    -webkit-transition: color 1000ms linear;
-    -ms-transition: color 1000ms linear;
-    transition: color 1000ms linear;
+@keyframes fill_red {
+    from {
+        fill: transparent;
+        stroke: #17E962;
+    }
+
+    to {
+        fill: #8E2034;
+        stroke: #8E2034;
+    }
 }
+
+@keyframes fill_back2green {
+    from {
+        fill: transparent;
+        stroke: #8E2034;
+    }
+
+    to {
+        fill: #17E962;
+        stroke: #17E962;
+    }
+}
+
+body[data-nav="true"]>main>.side>h2>.fancy>#logo {
+    animation: fill_red 1s ease forwards 0.1s;
+    -webkit-transition: fill_red 1000ms linear;
+    -ms-transition: fill_red 1000ms linear;
+    transition: fill_red 1000ms linear;
+    stroke: #8E2034;
+}
+
+body[data-nav="true"]>main>.side>h2>.fancy>#logo path:nth-child(n):nth-child(-n+9) {
+    stroke: #8E2034;
+    -webkit-transition: fill 1000ms linear;
+    -ms-transition: fill 1000ms linear;
+    transition: fill 1000ms linear;
+}
+
+/* body[data-nav="false"]>main>.side>h2>.fancy>#logo{
+    animation: fill_back2green 0.5s ease forwards 4.5s;
+    -webkit-transition: fill 1000ms linear;
+    -ms-transition: fill 1000ms linear;
+    transition: fill 1000ms linear;
+} */
+
+/* body[data-nav="false"]>main>.side>h2>.fancy>#logo path:nth-child(n):nth-child(-n+9){
+    stroke: #17E962;
+} */
 
 /* @keyframes titleAnimation {
     0% {
@@ -93,3 +142,44 @@ body[data-nav="true"]>main>#left-side .fancy {
     animation: titleAnimation ease-out 2s;
     animation-fill-mode: forwards;
 } */
+
+/*! Wavey title  */
+.titleAnim {
+    display: inline-block;
+    position: relative;
+}
+
+.titleAnim span {
+    display: inline-block;
+    position: relative;
+    opacity: 0;
+    animation: pop 0.8s ease-in-out forwards;
+}
+
+.titleAnim2 {
+    display: inline-block;
+    position: relative;
+}
+
+.titleAnim2 span {
+    display: inline-block;
+    position: relative;
+    opacity: 0;
+    animation: pop 0.8s ease-in-out forwards;
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    70% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
