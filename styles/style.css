@@ -221,7 +221,11 @@ body[data-nav="true"]>main>.side>h2>.fancy>#logo path:nth-child(n):nth-child(-n+
 }
 
 @media only screen and (max-width: 480px) {
+
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 440px) {
+    #left-side{
+        transition: width ease-out 0.15s;
+    }
 }

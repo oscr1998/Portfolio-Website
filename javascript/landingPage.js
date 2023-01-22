@@ -3,6 +3,16 @@ function delayFunction(fn) {
   setTimeout(fn, 0);
 }
 
+// ! Background mobile tilt
+// if (window.DeviceOrientationEvent) {
+//   window.addEventListener("deviceorientation", function(event) {
+//     var tilt = event.beta;
+//     left.style.width = tilt + "px";
+//   }, true);
+// } else {
+//   console.log("DeviceOrientationEvent is not supported");
+// }
+
 //! ########## Background mouse tracking ##########
 const left = document.getElementById("left-side");
 

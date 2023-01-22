@@ -346,7 +346,7 @@ body[data-project="true"]>#projectPage {
 }
 
 body[data-project="false"]>#projectPage {
-    bottom: -100%;
+    bottom: -110%;
     transition: bottom 0.5s;
     z-index: 101;
 }
@@ -541,4 +541,31 @@ a:active {
     }
 }
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 415px) {
+    .grid-item{
+        min-height: 80px;
+    }
+
+    #nav-links {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 0;
+        padding: 0;
+        padding-top: 10%;
+    }
+
+    .grid-item>.grid-content {
+        padding-top:10px;
+    }
+
+    #linkedIn #github #email{
+        min-height: 60px;
+    }
+
+    .contact-box {
+        height: 60px;
+    }
+
+}

@@ -248,3 +248,78 @@ body[data-google="true"]>#google {
     transition: bottom 0.5s ease-in;
     z-index: 900;
 }
+
+@media only screen and (max-width: 1820px) {
+
+}
+
+@media only screen and (max-width: 1600px) {
+    .project-info-about-links{
+        width: 100%;
+    } 
+}
+
+@media only screen and (max-width: 1024px) {
+    .project-info-about{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    .repo-link{
+        padding: 5px;
+    }
+
+    .project-info-grid{
+        grid-template-rows: 5% 35% 35% 17%;
+    }
+
+    .project-info-about{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #habit >.project-info-grid{
+        grid-template-rows: 10% 45% 35% 17%;
+    }
+    #github>.project-info-grid{
+        grid-template-rows: 10% 35% 45% 17%;
+    }
+    #pokemon>.project-info-grid{
+        grid-template-rows: 10% 45% 35% 17%;
+    }
+    #telegram>.project-info-grid{
+        grid-template-rows: 10% 45% 35% 17%;
+    }
+    #message>.project-info-grid{
+        grid-template-rows: 12% 35% 45% 17%;
+    }
+
+    .project-info-title{
+        font-size: 0.9rem;
+    }
+
+    table{
+        font-size: 0.8rem;
+    }
+
+    th{
+        font-size: 1rem;
+    }
+
+    .repo-link{
+        scale: 0.9;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+}
