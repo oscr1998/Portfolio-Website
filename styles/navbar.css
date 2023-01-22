@@ -99,9 +99,11 @@ body[data-nav="true"]>nav>#nav-links {
     width: 5rem;
     position: fixed;
     z-index: 3;
-    left: 50%;
+    /* left: 50%; */
     bottom: 2rem;
-    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    /* transform: translateX(-50%); */
     background-color: #1b483d;
     border: none;
     border-radius: 5rem;
@@ -112,6 +114,15 @@ body[data-nav="true"]>nav>#nav-links {
     transition-timing-function: ease;
     transition-duration: 400ms;
     z-index: 100;
+    animation: pop 0.8s ease-in-out forwards;
+    animation-delay: 6.5s;
+    opacity: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #nav-toggle:hover {
