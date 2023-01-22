@@ -33,3 +33,17 @@ const toggleGithub = () => {
     document.body.dataset.github =
         document.body.dataset.github === "true" ? "false" : "true";
 };
+const toggleTelegram = () => {
+    document.body.dataset.telegram =
+        document.body.dataset.telegram === "true" ? "false" : "true";
+};
+const toggleMessage = () => {
+    document.body.dataset.message =
+        document.body.dataset.message === "true" ? "false" : "true";
+        console.log("fired")
+};
+const toggleGoogle = () => {
+    document.body.dataset.google =
+        document.body.dataset.google === "true" ? "false" : "true";
+        console.log("fired")
+};

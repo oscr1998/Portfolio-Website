@@ -107,7 +107,7 @@
         <i class="open uil uil-bars"></i>
         <i class="close uil uil-multiply"></i>
     </button>
-    <nav>
+    <nav class="nav">
         <div id="nav-links" class="grid">
             <div class="grid-item" id="grid1" onclick="toggleAbout()">
                 <div class="grid-border"></div>
@@ -142,7 +142,7 @@
                             <i class="fa-brands fa-linkedin"></i>
                         </div>
                         <a class="nav-link" href="#">
-                            <h2 class="nav-link-label rubik-font">LinkedIn</h2>
+                            <h2 class="nav-link-label nav-link-label-small rubik-font">LinkedIn</h2>
                         </a>
                     </div>
                     <div class="contact-box grid-item" id="github"
@@ -151,7 +151,7 @@
                             <i class="fa-brands fa-github"></i>
                         </div>
                         <a class="nav-link" href="#">
-                            <h2 class="nav-link-label rubik-font">GitHub </h2>
+                            <h2 class="nav-link-label nav-link-label-small rubik-font">GitHub </h2>
                         </a>
                     </div>
                     <div class="contact-box grid-item" id="email" onclick="sendEmail();">
@@ -159,7 +159,7 @@
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                         <a class="nav-link" href="#">
-                            <h2 class="nav-link-label rubik-font">Email</h2>
+                            <h2 class="nav-link-label nav-link-label-small rubik-font">Email</h2>
                         </a>
                     </div>
                 </div>
@@ -322,7 +322,7 @@
                         repository information</span>
                 </div>
             </div>
-            <div class="project-item" id="project5">
+            <div class="project-item" id="project5" onclick="toggleTelegram()">
                 <div class="background-image" id="background5"></div>
                 <div class="project_heading">
                     <h2>Telegram</h2>
@@ -330,14 +330,14 @@
                         address</span>
                 </div>
             </div>
-            <div class="project-item" id="project6">
+            <div class="project-item" id="project7" onclick="toggleMessage()">
                 <div class="background-image" id="background7"></div>
                 <div class="project_heading">
                     <h2>Messaging Board</h2>
                     <span class="small">A anonymous messaging board utlising the Giphy API</span>
                 </div>
             </div>
-            <div class="project-item" id="project6">
+            <div class="project-item" id="project6" onclick="toggleGoogle()">
                 <div class="background-image" id="background6"></div>
                 <div class="project_heading">
                     <h2>Google Clone</h2>
@@ -345,10 +345,10 @@
                 </div>
             </div>
             <div class="project-item" id="project6">
-                <div class="background-image" id="background6"></div>
+                <div class="background-image" id="background8"></div>
                 <div class="project_heading">
-                    <h2>Portfolio Website</h2>
-                    <span class="small">My personal website to display my projects and experience</span>
+                    <h2>More Projects</h2>
+                    <span class="small">I am currently working on more projects which will be displayed here once they are finished.</span>
                 </div>
             </div>
             <div class="project-button" id="projectButton">
@@ -359,6 +359,7 @@
         </div>
     </div>
 
+    <!-- ##### Revelio Info Page #####-->
     <div class="project-info" id="revelio" data-revelio="false">
         <div class="project-info-grid">
             <div class="project-info-title">
@@ -431,7 +432,7 @@
             </div>
         </div>
     </div>
-
+    <!-- ##### Who's that pokemon Info Page #####-->
     <div class="project-info" id="pokemon" data-pokemon="false">
         <div class="project-info-grid">
             <div class="project-info-title">
@@ -441,7 +442,9 @@
                 <video class="video" src="./Videos/pokemon.mp4" id="revelio-video" controls></video>
             </div>
             <div class="project-info-about">
-                <p>A multiplayer online "Who's that Pokemon?" React quiz game using websockets so that players can create private games and play against their friends online. The game allows players to chat with all players online or with players in their game lobby.</p>
+                <p>A multiplayer online "Who's that Pokemon?" React quiz game using websockets so that players can
+                    create private games and play against their friends online. The game allows players to chat with all
+                    players online or with players in their game lobby.</p>
                 <a class="repo-link" href="https://github.com/oscr1998/Whos_that_Pokemon_Clientside"><i
                         class="fa-brands fa-github"></i> Github Repository </a>
             </div>
@@ -493,7 +496,7 @@
             </div>
         </div>
     </div>
-
+    <!-- ##### Habit tracker Info Page #####-->
     <div class="project-info" id="habit" data-habit="false">
         <div class="project-info-grid">
             <div class="project-info-title">
@@ -503,7 +506,10 @@
                 <video class="video" src="./Videos/habit.mp4" id="revelio-video" controls></video>
             </div>
             <div class="project-info-about">
-                <p>A habit tracking app with full user authorisation and authentication. Users are able to choose a habit they want to track and choose the frequency at which they want to track the habit for the day/week/month. Users are able to mark individual habits as done for the day and earn streaks for completing their habits multiple days in a row.</p>
+                <p>A habit tracking app with full user authorisation and authentication. Users are able to choose a
+                    habit they want to track and choose the frequency at which they want to track the habit for the
+                    day/week/month. Users are able to mark individual habits as done for the day and earn streaks for
+                    completing their habits multiple days in a row.</p>
                 <a class="repo-link" href="https://github.com/oscr1998/Whos_that_Pokemon_Clientside"><i
                         class="fa-brands fa-github"></i> Github Repository </a>
             </div>
@@ -516,28 +522,28 @@
                         <th>Backend</th>
                         <th>Both</th>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>MongoDB</td>
-                        <td>Javascript</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>Express</td>
-                        <td>GitHub</td>
-                    </tr>
-                    <tr>
-                        <td>REACT.js</td>
-                        <td>Cors</td>
-                        <td>Node.js</td>
-                    </tr>
-                    <tr>
-                        <td>Netlify</td>
-                        <td>Heroku</td>
-                        <td>Slack</td>
-                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>MongoDB</td>
+                            <td>Javascript</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Express</td>
+                            <td>GitHub</td>
+                        </tr>
+                        <tr>
+                            <td>REACT.js</td>
+                            <td>Cors</td>
+                            <td>Node.js</td>
+                        </tr>
+                        <tr>
+                            <td>Netlify</td>
+                            <td>Heroku</td>
+                            <td>Slack</td>
+                        </tr>
                 </table>
 
             </div>
@@ -548,22 +554,25 @@
             </div>
         </div>
     </div>
-
+    <!-- ##### Github repo tracker Info Page #####-->
     <div class="project-info" id="github" data-github="false">
         <div class="project-info-grid">
             <div class="project-info-title">
                 <h1>Github Repository Tracker</h1>
             </div>
             <div class="video-container">
-                <video class="video" src="./Videos/habit.mp4" id="revelio-video" controls></video>
+                <video class="video" src="./Videos/github-lite.mp4" id="revelio-video" controls></video>
             </div>
             <div class="project-info-about">
-                <p>A React.js site using the GitHub API. You can search any Github username and recieve full user data ranging from Number of repos, followers, profile creation date. It also provides information on each repository.</p>
+                <p>A React app using the GitHub API. You can search any Github username and recieve full user data
+                    ranging from Number of repos, followers, profile creation date. It also provides information on each
+                    repository.</p>
                 <div class="project-info-about-links">
-                <a class="repo-link" href="https://github.com/oscr1998/GitHub_Stats"><i
-                        class="fa-brands fa-github"></i> Github Repository </a>
-                <a class="repo-link" href="https://github-repo-stats.netlify.app/"><i class="fa-solid fa-link"></i> Live site </a>
-            </div>
+                    <a class="repo-link" href="https://github.com/oscr1998/GitHub_Stats"><i
+                            class="fa-brands fa-github"></i> Github Repository </a>
+                    <a class="repo-link" href="https://github-repo-stats.netlify.app/"><i class="fa-solid fa-link"></i>
+                        Live site </a>
+                </div>
             </div>
             <div class="project-info-tech">
                 <h2>Technologies used:</h2>
@@ -572,34 +581,215 @@
                     <tr>
                         <th>Frontend</th>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                    </tr>
-                    <tr>
-                        <td>GitHub API</td>
-                    </tr>
-                    <tr>
-                        <td>Javascript</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                    </tr>
-                    <tr>
-                        <td>REACT.js</td>
-                    </tr>
-                    <tr>
-                        <td>Node.js</td>
-                    </tr>
-                    <tr>
-                        <td>Netlify</td>
-                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                        </tr>
+                        <tr>
+                            <td>GitHub API</td>
+                        </tr>
+                        <tr>
+                            <td>Javascript</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                        </tr>
+                        <tr>
+                            <td>REACT.js</td>
+                        </tr>
+                        <tr>
+                            <td>Node.js</td>
+                        </tr>
+                        <tr>
+                            <td>Netlify</td>
+                        </tr>
                 </table>
 
             </div>
             <div class="project-info-button-grid">
                 <button onclick="toggleGithub()" class="project-info-button">
+                    <i class="close uil uil-multiply"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Telegram Info Page #####-->
+    <div class="project-info" id="telegram" data-telegram="false">
+        <div class="project-info-grid">
+            <div class="project-info-title">
+                <h1>Colorful Telegram</h1>
+            </div>
+            <div class="video-container">
+                <img src="./Videos/telegraph.gif" alt="a gif of the telegram app working" class="video">
+            </div>
+            <div class="project-info-about">
+                <p>A telegra.ph inspired application where users can write posts with title, pseudonym and body. When a
+                    user publishes a post it is stored in a MongoDB database and each post is accessible with their own
+                    unique show path</p>
+                <a class="repo-link" href="https://github.com/oscr1998/Colorful-Telegraph"><i
+                        class="fa-brands fa-github"></i> Github Repository </a>
+            </div>
+            <div class="project-info-tech">
+                <h2>Technologies used:</h2>
+                <br>
+                <table>
+                    <tr>
+                        <th>Frontend</th>
+                        <th>Backend</th>
+                        <th>Both</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>MongoDB</td>
+                            <td>Javascript</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td></td>
+                            <td>GitHub</td>
+                        </tr>
+                        <tr>
+                            <td>Netlify</td>
+                            <td></td>
+                            <td>Node.js</td>
+                        </tr>
+                </table>
+
+            </div>
+            <div class="project-info-button-grid">
+                <button onclick="toggleTelegram()" class="project-info-button">
+                    <i class="close uil uil-multiply"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Messaging board repo tracker Info Page #####-->
+    <div class="project-info" id="message" data-message="false">
+        <div class="project-info-grid">
+            <div class="project-info-title">
+                <h1>Anonymous messaging board</h1>
+            </div>
+            <div class="video-container">
+                <img src="./Videos/message.gif" alt="a gif of the messaging board" class="video">
+            </div>
+            <div class="project-info-about">
+                <p>A live anonymous messaging board where users can make posts, react to other peoples posts and comment
+                    on them aswell. Utilising the GIPHY API you can attach gifs to your posts.</p>
+                <div class="project-info-about-links">
+                    <a class="repo-link" href="https://github.com/oscr1998/TeamName404-Messaging-Board-Frontend"><i
+                            class="fa-brands fa-github"></i> Github Repository </a>
+                    <a class="repo-link" href="https://team-name-404.netlify.app/"><i class="fa-solid fa-link"></i>
+                        Live site </a>
+                </div>
+            </div>
+            <div class="project-info-tech">
+                <h2>Technologies used:</h2>
+                <br>
+                <table>
+                    <tr>
+                        <th>Frontend</th>
+                        <th>Backend</th>
+                        <th>Both</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Jest</td>
+                            <td>Javascript</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Supertest</td>
+                            <td>GitHub</td>
+                        </tr>
+                        <tr>
+                            <td>Netlify</td>
+                            <td>Nodemon</td>
+                            <td>Node.js</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Express</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Cors</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Dotenv</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Heroku</td>
+                            <td></td>
+                        </tr>
+                </table>
+
+            </div>
+            <div class="project-info-button-grid">
+                <button onclick="toggleMessage()" class="project-info-button">
+                    <i class="close uil uil-multiply"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Google clone Info Page #####-->
+    <div class="project-info" id="google" data-google="false">
+        <div class="project-info-grid">
+            <div class="project-info-title">
+                <h1>Google Clone</h1>
+            </div>
+            <div class="video-container">
+                <video class="video" src="./Videos/google.mp4" id="google-video" controls></video>
+            </div>
+            <div class="project-info-about">
+                <p>This application is an imitation of the Google search Console, using my own simple REST API.</p>
+                <div class="project-info-about-links">
+                    <a class="repo-link" href="https://github.com/oscr1998/Google-Clone"><i
+                            class="fa-brands fa-github"></i> Github Repository </a>
+                    <a class="repo-link" href="https://google-clone-basic.netlify.app/"><i class="fa-solid fa-link"></i>
+                        Live site </a>
+                </div>
+            </div>
+            <div class="project-info-tech">
+                <h2>Technologies used:</h2>
+                <br>
+                <table>
+                    <tr>
+                        <th>Frontend</th>
+                        <th>Backend</th>
+                        <th>Both</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Express / Cors</td>
+                            <td>Javascript</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Render</td>
+                            <td>GitHub</td>
+                        </tr>
+                        <tr>
+                            <td>Netlify</td>
+                            <td>Nodemon</td>
+                            <td>Node.js</td>
+                        </tr>
+                </table>
+
+            </div>
+            <div class="project-info-button-grid">
+                <button onclick="toggleGoogle()" class="project-info-button">
                     <i class="close uil uil-multiply"></i>
                 </button>
             </div>

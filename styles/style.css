@@ -183,3 +183,45 @@ body[data-nav="true"]>main>.side>h2>.fancy>#logo path:nth-child(n):nth-child(-n+
         transform: translateY(0);
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    
+}
+
+@media only screen and (max-width: 900px) {
+    #logo{
+        scale: 0.8;
+        transition: scale ease-in 0.1s;
+    }
+    #logo2{
+        scale: 0.8;
+        transition: scale ease-in 0.1s;
+    }
+    .side .title{
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    #logo{
+        scale: 0.6;
+        transition: scale ease-in 0.1s;
+    }
+    #logo2{
+        scale: 0.6;
+        transition: scale ease-in 0.1s;
+    }
+    .side .title{
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

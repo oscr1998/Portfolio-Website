@@ -212,3 +212,39 @@ body[data-github="true"]>#github {
     transition: bottom 0.5s ease-in;
     z-index: 900;
 }
+
+/* ! Telegram */
+body[data-telegram="false"]>#telegram {
+    bottom: -100%;
+    transition: bottom 0.5s ease-in;
+}
+
+body[data-telegram="true"]>#telegram {
+    bottom: -1%;
+    transition: bottom 0.5s ease-in;
+    z-index: 900;
+}
+
+/* ! 404 */
+body[data-message="false"]>#message {
+    bottom: -100%;
+    transition: bottom 0.5s ease-in;
+}
+
+body[data-message="true"]>#message {
+    bottom: -1%;
+    transition: bottom 0.5s ease-in;
+    z-index: 900;
+}
+
+/* ! google */
+body[data-google="false"]>#google {
+    bottom: -100%;
+    transition: bottom 0.5s ease-in;
+}
+
+body[data-google="true"]>#google {
+    bottom: -1%;
+    transition: bottom 0.5s ease-in;
+    z-index: 900;
+}

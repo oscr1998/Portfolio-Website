@@ -66,7 +66,7 @@ body[data-nav="true"]>nav>#nav-links {
     text-decoration: none;
 }
 
-#nav-links>div:hover>div>.nav-link>.nav-link-label{
+#nav-links>div:hover>div>.nav-link>.nav-link-label {
     opacity: 0.95;
     transition: ease 0.7s;
 }
@@ -79,7 +79,7 @@ body[data-nav="true"]>nav>#nav-links {
     margin: 0rem;
 }
 
-#nav-links>div:hover>div>.nav-link>.nav-details{
+#nav-links>div:hover>div>.nav-link>.nav-details {
     opacity: 0.95;
     transition: ease 0.7s;
 }
@@ -119,7 +119,7 @@ body[data-nav="true"]>nav>#nav-links {
     opacity: 0;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,16 +192,15 @@ nav>#grid {
     position: relative;
 }
 
-#grid3{
+#grid3 {
     display: grid;
 
 }
 
-.contact-box{
+.contact-box {
     height: 33%;
     border-radius: 0;
     display: flex
-
 }
 
 .grid-item:hover {
@@ -256,7 +255,7 @@ nav>#grid {
     z-index: 2;
 }
 
-.grid-contact-content{
+.grid-contact-content {
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -279,12 +278,12 @@ nav>#grid {
     color: #8E2034;
 }
 
-.grid-item:hover>.grid-content>.grid-image>i{
+.grid-item:hover>.grid-content>.grid-image>i {
     opacity: 1;
     transition: ease-in 0.5s;
 }
 
-.contact-image{    
+.contact-image {
     position: fixed;
     right: 23%;
     align-items: flex-start;
@@ -296,17 +295,17 @@ nav>#grid {
     color: #8E2034;
 }
 
-.grid-item:hover>.contact-image>i{
+.grid-item:hover>.contact-image>i {
     opacity: 1;
     transition: ease-in 0.5s;
 }
 
-#linkedIn{
+#linkedIn {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-#email{
+#email {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -316,15 +315,16 @@ nav>#grid {
 
 /* About Page Transition */
 
-body[data-about="true"]>#aboutPage{
-    left:0;
-    z-index: 101;  
+body[data-about="true"]>#aboutPage {
+    left: 0;
+    z-index: 101;
 }
 
-body[data-about="false"]>#aboutPage{
-    left:-100%;
+body[data-about="false"]>#aboutPage {
+    left: -100%;
     transition: left 0.5s;
-    z-index: 101;}
+    z-index: 101;
+}
 
 /* Projects Page Transition */
 #projectPage {
@@ -340,15 +340,16 @@ body[data-about="false"]>#aboutPage{
     color: white;
 }
 
-body[data-project="true"]>#projectPage{
-    bottom:0;
-    z-index: 101;  
+body[data-project="true"]>#projectPage {
+    bottom: 0;
+    z-index: 101;
 }
 
-body[data-project="false"]>#projectPage{
-    bottom:-100%;
+body[data-project="false"]>#projectPage {
+    bottom: -100%;
     transition: bottom 0.5s;
-    z-index: 101;}
+    z-index: 101;
+}
 
 /* Contact Page Transition */
 #contactPage {
@@ -363,28 +364,181 @@ body[data-project="false"]>#projectPage{
     color: white;
 }
 
-body[data-contact="true"]>#contactPage{
-    right:0;
-    z-index: 101;  
+body[data-contact="true"]>#contactPage {
+    right: 0;
+    z-index: 101;
 }
 
-body[data-contact="false"]>#contactPage{
-    right:-100%;
+body[data-contact="false"]>#contactPage {
+    right: -100%;
     transition: right 0.5s;
-    z-index: 101;}
+    z-index: 101;
+}
 
 
 /* Link decorations */
 a:link {
     text-decoration: none;
     font-size: 1.3rem;
- }
+}
 
 
-a:visited { text-decoration: none; }
+a:visited {
+    text-decoration: none;
+}
 
 
-a:hover { text-decoration: none; }
+a:hover {
+    text-decoration: none;
+}
 
 
-a:active { text-decoration: none; }
+a:active {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav-link-label {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {}
+
+@media only screen and (max-width: 768px) {
+    .nav-link-label-small {
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-link-label {
+        font-size: 40px;
+    }
+
+    /* .nav-details {
+        display: none;
+    } */
+
+    #nav-links {
+        display: block;
+    }
+
+    body[data-nav="true"]>.nav {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: 99;
+        overflow: hidden;
+        background-color: #141414;
+    }
+
+    .grid-item{
+        min-height: 130px;
+        margin-bottom: 5%;
+        border-radius: 10px;
+    }
+
+    .grid-item>.grid-content {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding-top:30px;
+    }
+
+    #nav-links>div>div>.nav-link>.nav-link-label{
+        font-size: 40px;
+        text-transform: capitalize;
+    }
+    
+    .nav-details {
+        display: none;
+    }
+
+    .nav-link-label-small {
+        padding: 0
+    }
+
+    .grid-image>i {
+        display: none;
+    }
+
+    .contact-image{
+        display: none;
+    }
+    #grid3{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-link-label {
+        font-size: 40px;
+    }
+
+    /* .nav-details {
+        display: none;
+    } */
+
+    #nav-links {
+        display: block;
+    }
+
+    body[data-nav="true"]>.nav {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: 99;
+        overflow: hidden;
+        background-color: #141414;
+    }
+
+    .grid-item{
+        min-height: 130px;
+        margin-bottom: 5%;
+        border-radius: 10px;
+        scale: 0.9;
+    }
+
+    .grid-item>.grid-content {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding-top:30px;
+    }
+
+    #nav-links>div>div>.nav-link>.nav-link-label{
+        font-size: 40px;
+        text-transform: capitalize;
+    }
+    
+    .nav-details {
+        display: none;
+    }
+
+    .nav-link-label-small {
+        padding: 0
+    }
+
+    .grid-image>i {
+        display: none;
+    }
+
+    .contact-image{
+        display: none;
+    }
+
+    #grid3{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 320px) {}

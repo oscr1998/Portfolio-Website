@@ -113,11 +113,9 @@
     background-image: url(../images/404.PNG);
 }
 #background8 {
-    background-image: url(../images/revelio.PNG);
+    background-color: rgba(92, 91, 91, 0.4);
 }
-#background9 {
-    background-image: url(../images/revelio.PNG);
-}
+
 
 .project-item:hover>.background-image {
     filter: grayscale(0%);
