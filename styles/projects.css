@@ -116,6 +116,14 @@
     background-color: rgba(88, 36, 232,0.6);
 }
 
+#background8:hover {
+    cursor: default;
+}
+
+#project8_heading:hover { 
+    cursor: default;
+}
+
 
 .project-item:hover>.background-image {
     filter: grayscale(0%);

@@ -76,6 +76,13 @@ body[data-nav="true"]>main>#right-side {
     transition: background-color 1000ms linear;
 }
 
+body[data-nav="false"]>main>#right-side {
+    background-color: #17E962;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
 @keyframes fill_red {
     from {
         fill: transparent;
@@ -153,7 +160,7 @@ body[data-nav="true"]>main>.side>h2>.fancy>#logo path:nth-child(n):nth-child(-n+
     display: inline-block;
     position: relative;
     opacity: 0;
-    animation: pop 0.8s ease-in-out forwards;
+    animation: pop 0.3s ease-in-out forwards;
 }
 
 .titleAnim2 {
@@ -165,7 +172,7 @@ body[data-nav="true"]>main>.side>h2>.fancy>#logo path:nth-child(n):nth-child(-n+
     display: inline-block;
     position: relative;
     opacity: 0;
-    animation: pop 0.8s ease-in-out forwards;
+    animation: pop 0.3s ease-in-out forwards;
 }
 
 @keyframes pop {
@@ -221,7 +228,9 @@ body[data-nav="true"]>main>.side>h2>.fancy>#logo path:nth-child(n):nth-child(-n+
 }
 
 @media only screen and (max-width: 480px) {
-
+    body:not([data-nav="true"])>#nav-toggle>.open {
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 440px) {

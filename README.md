@@ -19,3 +19,5 @@ Follow this link to go to the website!: https://oliver-catelan-robinson.netlify.
 | HTML         | CSS                | Javascript |
 |              |                    |            | 
 
+## To do:
+- Make webpage responsive vertically

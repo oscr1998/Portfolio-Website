@@ -115,7 +115,7 @@ body[data-nav="true"]>nav>#nav-links {
     transition-duration: 400ms;
     z-index: 100;
     animation: pop 0.8s ease-in-out forwards;
-    animation-delay: 6.5s;
+    animation-delay: 5.5s;
     opacity: 0;
 }
 
