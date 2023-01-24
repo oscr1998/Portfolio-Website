@@ -65,14 +65,14 @@
     padding-right: 3%;
 }
 
-.experience-row{
+.experience-row {
     display: grid;
     grid-template-rows: 10% 40% 40%;
     padding-left: 3%;
     padding-right: 3%;
 }
 
-#skills-row{
+#skills-row {
     display: grid;
     grid-template-rows: 10% 19% 25% 19% 22.5%;
     padding-left: 3%;
@@ -97,7 +97,7 @@
     font-size: 2.5rem;
 }
 
-.about-header{
+.about-header {
     display: flex;
     font-family: 'Oswald', sans-serif;
     justify-content: center;
@@ -107,14 +107,14 @@
     margin-bottom: 15px;
 }
 
-.row>div>i{
+.row>div>i {
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
     opacity: 0.6;
 }
 
-.about-section{
+.about-section {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -123,20 +123,20 @@
 }
 
 
-.date{
+.date {
     font-weight: lighter;
     margin-top: -20px;
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
 
-#degree{
+#degree {
     font-weight: lighter;
     margin-top: -20px;
     font-size: 1.5rem;
 }
 
-#a-levels{
+#a-levels {
     font-size: 1.5rem;
 }
 
@@ -152,7 +152,7 @@
     border-bottom-left-radius: 5px;
 }
 
-.experience-section{
+.experience-section {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -161,40 +161,41 @@
     padding-bottom: 2vh;
 }
 
-#info-tag{
+#info-tag {
     margin-top: -10px;
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 5px;
 }
 
-.tech-list{
-    text-align: center;
+.tech-list {
+    text-align: left;
     font-size: 1.5rem;
 }
 
-#tech-list-info{
+#tech-list-info {
     margin: 0;
     padding-left: 0;
 }
 
-.tech-list>ul>li{
-    list-style: none;
+.tech-list>ul>li {
+    list-style: inside;
 }
 
-.job-desc{
+.job-desc {
     font-size: 1.5rem;
-    
+
 }
 
-.job-list{
+.job-list {
     margin-top: 0;
     padding-top: 0;
+    padding-left: 0;
     list-style: none;
     text-align: center;
 }
 
-.frontend-list{
+.frontend-list {
     display: grid;
     gap: 15px;
     grid-template-columns: 25% 25% 25% 25%;
@@ -211,18 +212,18 @@
     /* background-color: rgba(96, 90, 90, 0.2); */
     /* padding-left: 15px;
     padding-right: 15px; */
-    }
-
-.backend-list{
-        display: grid;
-        gap: 15px;
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: repeat(3, auto);
-        text-align: center;
-        margin-right: 7%;
 }
 
-.backend-item{
+.backend-list {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: repeat(3, auto);
+    text-align: center;
+    margin-right: 7%;
+}
+
+.backend-item {
     grid-column: span 1;
     grid-row: span 1;
     /* border: solid 1px rgba(119, 136, 153, 0.5); */
@@ -237,15 +238,15 @@
     /* background-color: rgba(96, 90, 90, 0.2); */
     /* padding-left: 15px;
     padding-right: 15px; */
-    }
+}
 
-.fullstack-list{
-        display: grid;
-        gap: 15px;
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: repeat(2, auto);
-        text-align: center;
-        margin-right: 7%;
+.fullstack-list {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: repeat(2, auto);
+    text-align: center;
+    margin-right: 7%;
 }
 
 .other-item {
@@ -256,25 +257,25 @@
     /* background-color: rgba(96, 90, 90, 0.2); */
     /* padding-left: 15px;
     padding-right: 15px; */
-    }
-
-.other-list{
-        display: grid;
-        gap: 15px;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(2, auto);
-        text-align: center;
-        margin-right: 5%;
 }
-    
+
+.other-list {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+    text-align: center;
+    margin-right: 5%;
+}
+
 
 
 .frontend-item:nth-child(8),
 .frontend-item:nth-child(7) {
-  grid-column: span 1;
+    grid-column: span 1;
 }
 
-.about-header-skills{
+.about-header-skills {
     margin-top: 1vh;
 }
 
@@ -313,3 +314,356 @@
         transform: translate(-50%, -20%);
     }
 }
+
+@media only screen and (max-width: 1720px) {
+    .about-header {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 1600px) {}
+
+@media only screen and (max-width: 1535px) {
+    .about-header {
+        font-size: 1.6rem;
+    }
+
+    .date {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media only screen and (max-width: 1350px) {
+
+    #bubble-wrapper {
+        width: 93%;
+    }
+
+    #aboutPage {
+        grid-template-columns: 30.85% 0.15% 30.85% 0.15% 30.85% 0.15% 7%;
+    }
+
+    #degree {
+        text-align: center;
+    }
+
+    #info-tag {
+        font-size: 1.3rem;
+    }
+
+    #tech-list-info {
+        font-size: 1.3rem;
+    }
+
+    .job-list {
+        font-size: 1.3rem;
+    }
+
+    #degree {
+        font-size: 1.3rem;
+    }
+
+    #a-levels {
+        font-size: 1.3rem;
+    }
+
+    .frontend-item {
+        font-size: 1.3rem;
+    }
+
+    .backend-item {
+        font-size: 1.3rem;
+    }
+
+    .fullstack-item {
+        font-size: 1.3rem;
+    }
+
+    .other-item {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .frontend-list {
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .about-header {
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: 2.1rem;
+    }
+
+    #tech-list-info {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    #bubble-wrapper {
+        width: 100%;
+    }
+
+    #aboutPage {
+        grid-template-rows: 29.85% 0.15% 32.85% 0.15% 29.85% 0.15% 7%;
+        grid-template-columns: 33.4% 33.4% 33.4%;
+    }
+
+    .divider {
+        grid-column: span 3;
+    }
+
+    .about-title {
+        padding: 0;
+        margin: 0;
+        font-size: 1.9rem;
+    }
+
+    /* EDUCATION */
+    .education-row {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 85%;
+    }
+
+    .education-row>.about-title {
+        grid-column: span 2;
+    }
+
+    .about-section {
+        display: inline-block;
+        text-align: center;
+    }
+
+    #a-levels>ul>li {
+        list-style-position: initial;
+    }
+
+    /* WORK EXPERIENCE */
+    .experience-row {
+        grid-column: span 3;
+        display: grid;
+        grid-template-rows: 15% 37% 37%;
+        grid-template-columns: 50% 50%;
+    }
+
+    .experience-row>.about-title {
+        grid-column: span 2;
+    }
+
+
+    .job-list {
+        padding-left: 50px;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    #info-tag {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    /* SKILLS SECTION */
+    .skills-row {
+        grid-column: span 3;
+        display: grid;
+        grid-template-rows: 15% 85%;
+        grid-template-columns: 25% 25% 25% 25%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .skills-row>.about-title {
+        grid-column: span 4;
+    }
+
+    .frontend-list {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, auto);
+        gap: 5%;
+    }
+
+    .backend-list {
+        grid-template-columns: 50% 50%;
+        gap: 5%;
+    }
+
+    .fullstack-list {
+        grid-template-columns: 100%;
+        gap: 5%;
+    }
+
+    .other-list {
+        grid-template-columns: 100%;
+        gap: 5%;
+    }
+
+    /* *{
+        border: 1px solid red;
+    } */
+
+    .button-row {
+        grid-column: span 3;
+    }
+
+    .aboutToggle {
+        border-radius: 4rem;
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid rgba(255, 255, 255);
+        z-index: 999;
+    }
+
+    .date {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .about-header {
+        font-size: 1.3rem;
+    }
+
+    .date {
+        font-size: 1.1rem;
+    }
+
+    #aboutPage {
+        grid-template-rows: 29.85% 0.15% 34.85% 0.15% 27.85% 0.15% 7%;
+        grid-template-columns: 33.4% 33.4% 33.4%;
+    }
+
+    .frontend-item {
+        font-size: 1.1rem;
+    }
+
+    .backend-item {
+        font-size: 1.1rem;
+    }
+
+    .fullstack-item {
+        font-size: 1.1rem;
+    }
+
+    .other-item {
+        font-size: 1.1rem;
+    }
+
+    /* .skills-row{
+        grid-template-columns: 32% 32% 18% 18%;
+    } */
+}
+
+@media only screen and (max-width: 750px) {
+    .tech-list {
+        display: none;
+    }
+
+    .job-list>li:nth-child(2) {
+        display: none;
+    }
+
+    #aboutPage {
+        grid-template-rows: 29.85% 0.15% 29.85% 0.15% 33.85% 0.15% 7%;
+        grid-template-columns: 33.4% 33.4% 33.4%;
+    }
+
+    #info-tag {
+        text-align: center;
+        padding: 0;
+        padding-top: 10px;
+        padding-right: 5px;
+    }
+
+    .job-list {
+        text-align: center;
+        padding: 0;
+        padding-left: 5px;
+    }
+
+
+    .frontend-list {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .backend-list {
+        grid-template-columns: 50% 50%;
+        gap: 5%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #aboutPage{
+        height: 100%;
+        grid-template-rows: 24.85% 0.15% 29.85% 0.15% 29.85% 0.15% 15%;
+        grid-template-columns: 33.4% 33.4% 33.4%;
+    }
+    .about-header {
+        font-size: 1rem;
+    }
+
+    .about-title{
+        font-size: 1.3rem;
+    }
+
+    #a-levels>ul>li {
+        font-size: 0.8rem;
+    }
+
+    #degree {
+        font-size: 0.8rem;
+    }
+
+    .frontend-item {
+        font-size: 0.9rem;
+    }
+
+    .backend-item {
+        font-size: 0.9rem;
+    }
+
+    .fullstack-item {
+        font-size: 0.9rem;
+    }
+
+    .other-item {
+        font-size: 0.9rem;
+    }
+
+    .date{
+        font-size: 0.9rem;
+    }
+
+    .aboutToggle {
+        border-radius: 5rem;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .job-list{
+        font-size: 0.9rem;
+    }
+
+    #info-tag{
+        font-size: 0.9rem;
+    }
+
+    body[data-about="true"]>#bubble-wrapper {
+        visibility: visible;
+    }
+    
+    body[data-about="false"]>#bubble-wrapper {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 320px) {}
